@@ -60,21 +60,6 @@ color: ${({ theme }) => theme.text_primary};
   }
 `;
 
-const SocialMediaIcons = styled.div`
-  display: flex;
-  margin-top: 1rem;
-`;
-
-const SocialMediaIcon = styled.a`
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-`;
 
 
 function Footer() {
@@ -83,10 +68,10 @@ function Footer() {
       <FooterWrapper>
         <Logo>© 2023 NexZap. All rights reserved</Logo>
         <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink href="#home">Home</NavLink>
+          <NavLink href="#products">Products</NavLink>
+          <NavLink href="#services">Services</NavLink>
+          <NavLink href="#contact">Contact</NavLink>
         </Nav>
         
 
