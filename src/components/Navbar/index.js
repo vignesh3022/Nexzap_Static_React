@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, NavLogo, NavItems, ButtonContainer, MobileIcon, MobileMenu, SocialMediaButtons, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, NavLogo, NavItems,  MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
@@ -25,7 +25,7 @@ const Navbar = () => {
           <NavLink href='#products'>Products</NavLink>
           <NavLink href='#services'>Services</NavLink>
           <NavLink href='#contact'>Contact</NavLink>
-          <SocialMediaButtons href="https://www.linkedin.com/company/nexzap/about/?viewAsMember=true" target="_blank"><LinkedInIcon/></SocialMediaButtons>
+          <NavLink href="https://www.linkedin.com/company/nexzap/about/?viewAsMember=true" target="_blank"><LinkedInIcon/></NavLink>
         </NavItems>
         {/* <ButtonContainer>
           
@@ -45,7 +45,7 @@ const Navbar = () => {
             <MobileLink href='#contact' onClick={() => {
               setIsOpen(!isOpen)
             }}>Contact</MobileLink>
-            <SocialMediaButtons style={{ marginLeft:'-9px',color: 'white', width: 'max-content',fontWeight: '500',fontSize:'16px' }} href="https://www.linkedin.com/company/nexzap/about/?viewAsMember=true" target="_blank">LinkedIn</SocialMediaButtons>
+            <MobileLink href="https://www.linkedin.com/company/nexzap/about/?viewAsMember=true" target="_blank">LinkedIn</MobileLink>
           </MobileMenu>
         }
       </NavbarContainer>
